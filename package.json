@@ -1,0 +1,82 @@
+{
+  "name": "intelli-sidebar",
+  "version": "1.0.0",
+  "displayName": "Intelli-Sidebar",
+  "publisher": "Sator Imaging",
+  "description": "Toggle Sidebar Visibility on Editor Layout Changes",
+  "icon": "icons/VSCode-IntelliSidebar.png",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sator-imaging/VSCode-IntelliSidebar.git"
+  },
+  "galleryBanner": {
+    "theme": "light",
+    "color": "#FFFFFF"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "Sidebar",
+    "UI",
+    "UX",
+    "Preview",
+    "Markdown"
+  ],
+  "extensionKind": [
+    "ui"
+  ],
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./out/extension.js",
+  "__DISABLED__contributes": {
+    "commands": [
+      {
+        "command": "intelli-sidebar.togglePreview",
+        "title": "M↓",
+        "icon": {
+          "light": "icons/Markdown-mark.svg",
+          "dark": "icons/Markdown-mark.svg"
+        }
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "intelli-sidebar.togglePreview",
+          "when": "editorLangId == markdown",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js",
+    "package": "vsce package --allow-star-activation",
+    "deploy": "vsce publish --allow-star-activation --yarn"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.0.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "@types/vscode": "^1.74.0",
+    "@typescript-eslint/eslint-plugin": "^5.45.0",
+    "@typescript-eslint/parser": "^5.45.0",
+    "@vscode/test-electron": "^2.2.0",
+    "@vscode/vsce": "^2.16.0",
+    "eslint": "^8.28.0",
+    "glob": "^8.0.3",
+    "mocha": "^10.1.0",
+    "typescript": "^4.9.3"
+  }
+}

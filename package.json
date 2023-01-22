@@ -63,7 +63,7 @@
     "lint": "eslint src --ext ts",
     "test": "node ./out/test/runTest.js",
     "package": "vsce package --allow-star-activation",
-    "deploy": "vsce publish --allow-star-activation --yarn"
+    "deploy": "vsce publish --allow-star-activation"
   },
   "devDependencies": {
     "@types/glob": "^8.0.0",

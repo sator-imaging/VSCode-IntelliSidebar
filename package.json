@@ -2,7 +2,7 @@
   "name": "intelli-sidebar",
   "version": "1.0.0",
   "displayName": "Intelli-Sidebar",
-  "publisher": "Sator Imaging",
+  "publisher": "sator-imaging",
   "description": "Toggle Sidebar Visibility on Editor Layout Changes",
   "icon": "icons/VSCode-IntelliSidebar.png",
   "license": "MIT",

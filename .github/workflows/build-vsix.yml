@@ -11,26 +11,27 @@ jobs:
     strategy:
       matrix:
         os: [macos-latest, ubuntu-latest, windows-latest]
-    runs-on: ${{ matrix.os }}    
+    runs-on: ${{ matrix.os }}
     steps:
-    - name: Checkout  
+    - name: Checkout
       uses: actions/checkout@v3
-    - name: Install Node.js  
+    - name: Install Node.js
       uses: actions/setup-node@v3
       with:
         node-version: 24.x
 
-    - run: npm install    
+    - run: npm install
 
     - if: runner.os == 'Linux'
       run: xvfb-run -a npm test
-    - if: runner.os != 'Linux'  
+    - if: runner.os != 'Linux'
       run: npm test
 
-    - name: Build  
+    - name: Build
       if: success()
       run: npm run package
 
-    - uses: actions/upload-artifact@v4  
+    - uses: actions/upload-artifact@v4
+      if: runner.os == 'Linux'
       with:
         path: '**/*.vsix'

@@ -1,6 +1,7 @@
 .*
 .*/**
 src/**
+out/test/**
 _Photoshop/**
 
 vsc-extension-quickstart.md

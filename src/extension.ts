@@ -1,9 +1,9 @@
 import * as vscode from 'vscode';
 
 
-// This method is called when your extension is deactivated
-export function deactivate() {
-}
+// // This method is called when your extension is deactivated
+// export function deactivate() {
+// }
 
 
 export function activate(context: vscode.ExtensionContext) {

@@ -1,7 +1,14 @@
+.*
+!.github
+!.vscode-test
+
+*.md
+!README.md
+!LICENSE.md
+
+*.vsix
+
 out
 dist
 node_modules
-.vscode-test/
-*.vsix
-
 _Photoshop

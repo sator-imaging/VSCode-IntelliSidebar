@@ -1,6 +1,9 @@
 .*
 !.github
 !.vscode-test
+!.gitignore
+!.vscodeignore
+!.eslintrc.json
 
 *.md
 !README.md

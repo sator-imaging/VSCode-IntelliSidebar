@@ -1,40 +1,39 @@
 import * as vscode from 'vscode';
 
 
-let onActiveEditorChanged: vscode.Disposable;
-let onTabGroupsChanged: vscode.Disposable;
-
-
-// This method is called when your extension is deactivated
-export function deactivate() {
-	onActiveEditorChanged?.dispose();
-	onTabGroupsChanged?.dispose();
-}
+// // This method is called when your extension is deactivated
+// export function deactivate() {
+// }
 
 
 export function activate(context: vscode.ExtensionContext) {
 
-	onActiveEditorChanged?.dispose();
-	onActiveEditorChanged = vscode.window.onDidChangeActiveTextEditor(editor => {
+	let onActiveEditorChanged = vscode.window.onDidChangeActiveTextEditor(editor => {
 		//let langId = editor?.document.languageId;
 		//vscode.window.showInformationMessage("LANG: " + langId);
 		if (vscode.window.tabGroups.all.length > 1) {
 			vscode.commands.executeCommand('workbench.action.closeSidebar');
+			vscode.commands.executeCommand('workbench.action.closeAuxiliaryBar');
 		}
 
 	});
 
 
-	onTabGroupsChanged?.dispose();
-	onTabGroupsChanged = vscode.window.tabGroups.onDidChangeTabGroups(tabGroups => {
+	let onTabGroupsChanged = vscode.window.tabGroups.onDidChangeTabGroups(tabGroups => {
 		//vscode.window.showInformationMessage('TAB GROUPS: ' + vscode.window.tabGroups.all.length);
 		if (vscode.window.tabGroups.all.length > 1) {
 			vscode.commands.executeCommand('workbench.action.closeSidebar');
+			vscode.commands.executeCommand('workbench.action.closeAuxiliaryBar');
 		}
 		else {
 			vscode.commands.executeCommand('workbench.action.closeSidebar');
 			vscode.commands.executeCommand('workbench.action.toggleSidebarVisibility');
+			// hide but don't show automatically.
+			// vscode.commands.executeCommand('workbench.action.closeAuxiliaryBar');
+			// vscode.commands.executeCommand('workbench.action.toggleAuxiliaryBar');
 		}
 	});
 
+	context.subscriptions.push(onActiveEditorChanged);
+	context.subscriptions.push(onTabGroupsChanged);
 }

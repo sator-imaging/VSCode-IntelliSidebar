@@ -1,5 +1,3 @@
-# Intelli-Sidebar
-
 Intelli-Sidebar provides big missing feature of Visual Studio Code.
 
 This extension automatically toggles primary sidebar visibility when editor panel splitted or Markdown preview shown next to the editor.
@@ -7,16 +5,21 @@ This extension automatically toggles primary sidebar visibility when editor pane
 ![Screenshot](https://user-images.githubusercontent.com/16752340/213895605-e7281a53-f54a-4a87-9abd-886bdf527b1e.gif)
 
 
+> [!TIP]
+> This extension also works in VS Code for the Web (including `github.dev`).
 
-## How to Use
+
+
+
+
+# How to Use
 
 Splitting editor will hide sidebar, closing editor will show sidebar again.
 
 Of course you can manually show/hide sidebar on your needs.
 
 
-
-### Remarks
+## Remarks
 
 **Sidebar remain open while comparing changes**
 : It seems no APIs to determine VS Code currently shows Compare Editor or not.
@@ -26,12 +29,17 @@ Of course you can manually show/hide sidebar on your needs.
 
 
 
-## Copyright
+
+
+# Copyright
 
 Copyright &copy; 2023 Sator Imaging, all rights reserved.
 
 
-## License
+
+
+
+# License
 
 <p>
 <details>

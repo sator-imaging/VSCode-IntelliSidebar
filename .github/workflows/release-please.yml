@@ -14,6 +14,9 @@ jobs:
     uses: ./.github/workflows/test.yml
 
   release-please:
+    needs: test
+    if: success()
+
     runs-on: ubuntu-latest
     steps:
       - uses: googleapis/release-please-action@v4

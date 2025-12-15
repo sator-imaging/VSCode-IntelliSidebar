@@ -31,31 +31,10 @@
     "vscode": "^1.74.0"
   },
   "activationEvents": [
-    "*"
+    "onStartupFinished"
   ],
   "main": "./out/extension.js",
   "browser": "./out/extension.js",
-  "__DISABLED__contributes": {
-    "commands": [
-      {
-        "command": "intelli-sidebar.togglePreview",
-        "title": "M↓",
-        "icon": {
-          "light": "icons/Markdown-mark.svg",
-          "dark": "icons/Markdown-mark.svg"
-        }
-      }
-    ],
-    "menus": {
-      "editor/title": [
-        {
-          "command": "intelli-sidebar.togglePreview",
-          "when": "editorLangId == markdown",
-          "group": "navigation"
-        }
-      ]
-    }
-  },
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",

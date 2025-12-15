@@ -23,12 +23,15 @@ export function activate(context: vscode.ExtensionContext) {
 		//vscode.window.showInformationMessage('TAB GROUPS: ' + vscode.window.tabGroups.all.length);
 		if (vscode.window.tabGroups.all.length > 1) {
 			vscode.commands.executeCommand('workbench.action.closeSidebar');
-			vscode.commands.executeCommand('workbench.action.closeAuxiliaryBar');
+
+			// // don't hide auxiliary bar
+			// vscode.commands.executeCommand('workbench.action.closeAuxiliaryBar');
 		}
 		else {
 			vscode.commands.executeCommand('workbench.action.closeSidebar');
 			vscode.commands.executeCommand('workbench.action.toggleSidebarVisibility');
-			// hide but don't show automatically.
+
+			// // don't show auxiliary bar
 			// vscode.commands.executeCommand('workbench.action.closeAuxiliaryBar');
 			// vscode.commands.executeCommand('workbench.action.toggleAuxiliaryBar');
 		}

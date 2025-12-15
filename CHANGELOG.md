@@ -5,6 +5,13 @@ All notable changes to the "intelli-sidebar" extension will be documented in thi
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
 
+## [1.1.2](https://github.com/sator-imaging/VSCode-IntelliSidebar/compare/v1.1.1...v1.1.2) (2025-12-15)
+
+
+### Bug Fixes
+
+* don't handle auxiliary bar ([b35c20e](https://github.com/sator-imaging/VSCode-IntelliSidebar/commit/b35c20e8d915a2dc6727ede21366942aa9b2814d))
+
 ## [1.1.1](https://github.com/sator-imaging/VSCode-IntelliSidebar/compare/v1.1.0...v1.1.1) (2025-12-14)
 
 

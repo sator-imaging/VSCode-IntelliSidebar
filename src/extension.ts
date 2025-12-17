@@ -13,7 +13,9 @@ export function activate(context: vscode.ExtensionContext) {
 		//vscode.window.showInformationMessage("LANG: " + langId);
 		if (vscode.window.tabGroups.all.length > 1) {
 			vscode.commands.executeCommand('workbench.action.closeSidebar');
-			vscode.commands.executeCommand('workbench.action.closeAuxiliaryBar');
+
+			// // don't handle auxiliary bar
+			// vscode.commands.executeCommand('workbench.action.closeAuxiliaryBar');
 		}
 
 	});
@@ -24,14 +26,14 @@ export function activate(context: vscode.ExtensionContext) {
 		if (vscode.window.tabGroups.all.length > 1) {
 			vscode.commands.executeCommand('workbench.action.closeSidebar');
 
-			// // don't hide auxiliary bar
+			// // don't handle auxiliary bar
 			// vscode.commands.executeCommand('workbench.action.closeAuxiliaryBar');
 		}
 		else {
 			vscode.commands.executeCommand('workbench.action.closeSidebar');
 			vscode.commands.executeCommand('workbench.action.toggleSidebarVisibility');
 
-			// // don't show auxiliary bar
+			// // don't handle auxiliary bar
 			// vscode.commands.executeCommand('workbench.action.closeAuxiliaryBar');
 			// vscode.commands.executeCommand('workbench.action.toggleAuxiliaryBar');
 		}

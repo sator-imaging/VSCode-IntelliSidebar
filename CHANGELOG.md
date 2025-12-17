@@ -5,24 +5,8 @@ All notable changes to the "intelli-sidebar" extension will be documented in thi
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
 
-## [1.2.0](https://github.com/sator-imaging/VSCode-IntelliSidebar/compare/v1.1.4...v1.2.0) (2025-12-17)
+## [1.1.5](https://github.com/sator-imaging/VSCode-IntelliSidebar/compare/v1.1.4...v1.1.5) (2025-12-17)
 
-
-### Features
-
-* browser support ([1b428c9](https://github.com/sator-imaging/VSCode-IntelliSidebar/commit/1b428c9426a87d9a3f8a5215f34f63d19ec6a71a))
-
-
-### Bug Fixes
-
-* :package: chore ([db81b93](https://github.com/sator-imaging/VSCode-IntelliSidebar/commit/db81b932168b9df622434267bda56b3c85f015e3))
-* actions ([81eb48f](https://github.com/sator-imaging/VSCode-IntelliSidebar/commit/81eb48f84a5228d1407c5974195b46dd3f2a417e))
-* chore ([2d3b8c6](https://github.com/sator-imaging/VSCode-IntelliSidebar/commit/2d3b8c6525cd34f9fb38bcd0a8002e54fef00c20))
-* don't handle auxiliary bar ([b35c20e](https://github.com/sator-imaging/VSCode-IntelliSidebar/commit/b35c20e8d915a2dc6727ede21366942aa9b2814d))
-* don't handle auxiliary bar 2 ([497ab37](https://github.com/sator-imaging/VSCode-IntelliSidebar/commit/497ab37e0c19d4fa544558a1ce022a884e44518d))
-* market place upload error ([d5367bd](https://github.com/sator-imaging/VSCode-IntelliSidebar/commit/d5367bd098e2d5a5112a16ceeb066d9535b20ea1))
-* publisher name ([9b56d29](https://github.com/sator-imaging/VSCode-IntelliSidebar/commit/9b56d29241817a06582692327a42a06e9463f9d5))
-* repo setting to allow actions create PR ([29063d1](https://github.com/sator-imaging/VSCode-IntelliSidebar/commit/29063d1fd483863f46df35c91d797dccd5249b8a))
 
 ## [1.1.4](https://github.com/sator-imaging/VSCode-IntelliSidebar/compare/v1.1.3...v1.1.4) (2025-12-17)
 

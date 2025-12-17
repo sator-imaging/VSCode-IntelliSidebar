@@ -1,6 +1,6 @@
 {
   "name": "intelli-sidebar",
-  "version": "1.2.0",
+  "version": "1.1.5",
   "displayName": "Intelli-Sidebar",
   "publisher": "sator-imaging",
   "description": "Toggle Sidebar Visibility on Editor Layout Changes",

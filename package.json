@@ -4,7 +4,7 @@
   "displayName": "Intelli-Sidebar",
   "publisher": "sator-imaging",
   "description": "Toggle Sidebar Visibility on Editor Layout Changes",
-  "icon": "icons-256px.png",
+  "icon": "icon-256px.png",
   "license": "MIT",
   "repository": {
     "type": "git",

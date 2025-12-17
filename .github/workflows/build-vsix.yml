@@ -30,7 +30,9 @@ jobs:
 
     - name: Build
       if: success()
-      run: npm run package
+      run: |
+        vsce ls
+        npm run package
 
     - uses: actions/upload-artifact@v4
       if: runner.os == 'Linux'

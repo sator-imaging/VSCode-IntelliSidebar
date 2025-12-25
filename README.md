@@ -1,3 +1,9 @@
+[![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/sator-imaging.intelli-sidebar)](https://marketplace.visualstudio.com/items?itemName=sator-imaging.intelli-sidebar)
+
+
+
+
+
 Intelli-Sidebar provides big missing feature of Visual Studio Code.
 
 This extension automatically toggles primary sidebar visibility when editor panel splitted or Markdown preview shown next to the editor.

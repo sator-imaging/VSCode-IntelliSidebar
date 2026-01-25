@@ -5,7 +5,7 @@ import * as vscode from 'vscode';
 // export function deactivate() {
 // }
 
-let lastTabGroupCount = -1;
+let lastTabGroupCount = -310;
 
 export function activate(context: vscode.ExtensionContext) {
 

@@ -5,6 +5,13 @@ All notable changes to the "intelli-sidebar" extension will be documented in thi
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
 
+## [1.1.7](https://github.com/sator-imaging/VSCode-IntelliSidebar/compare/v1.1.6...v1.1.7) (2026-01-25)
+
+
+### Bug Fixes
+
+* -1 is not stable on startup ([0b893d1](https://github.com/sator-imaging/VSCode-IntelliSidebar/commit/0b893d1c406f14ad3ff0e26980b00260ebd09a93))
+
 ## [1.1.6](https://github.com/sator-imaging/VSCode-IntelliSidebar/compare/v1.1.5...v1.1.6) (2026-01-25)
 
 

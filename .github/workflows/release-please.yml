@@ -16,13 +16,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5  # v4.3.1
-      - run: |
-          cat <<EOF  > release-please-config.json
-          {
-            "draft": true
-          }
-          EOF
       - uses: googleapis/release-please-action@16a9c90856f42705d54a6fda1823352bdc62cf38  # v4.4.0
         with:
           release-type: node
+          draft: true
           token: ${{ secrets.GITHUB_TOKEN }}  # make it stable

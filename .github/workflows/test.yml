@@ -25,7 +25,7 @@ jobs:
       with:
         node-version: 24.x
 
-    - run: npm ci
+    - run: npm i
 
     - if: runner.os == 'Linux'
       run: xvfb-run -a npm test

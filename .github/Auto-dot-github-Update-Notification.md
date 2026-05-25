@@ -22,11 +22,10 @@ on:
       auto-bump:
         type: boolean
         default: false
-        required: false
-        description: Create draft release before proceeding
+        description: |
+          Auto Bump & CHANGELOG: Create draft release before proceeding
       auto-bump-args:
         type: string
-        required: false
         # DEBUG
         description: '**DEBUG**: NOT WORKING'
         default: csproj=GlobalPackageVersion
@@ -35,10 +34,8 @@ on:
       auto-bump:
         type: boolean
         default: false
-        required: false  # False for backward compatibility
       auto-bump-args:
         type: string
-        required: false  # False for backward compatibility
         description: |
 
           Auto bump PR
@@ -56,7 +53,6 @@ on:
       # Backward compatibility
       auto-bump-version:
         type: string
-        default: ''
 
 jobs:
   main:
@@ -67,7 +63,7 @@ jobs:
       contents: write  # Sync .github | Auto bump
       issues: write    # PR labeler
     with:
-      auto-bump: ${{ inputs.auto-bump }}
+      auto-bump: ${{ inputs.auto-bump || false }}
 
       # See above
       auto-bump-args: $$$  ### <-- UPDATE HERE #######

@@ -3,8 +3,10 @@ name: test
 on:
   push:
     branches: [ "main" ]
+    paths-ignore: [ '.github/**' ]
   pull_request:
     branches: [ "main" ]
+    paths-ignore: [ '.github/**' ]
   #release:
   #  types: [ published ]
   workflow_call:
